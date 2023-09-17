@@ -26,7 +26,7 @@ set(BUILD_LIST src/main.cpp)
 #   GLOB 当前目录搜索
 # 参数二: 变量名
 # 参数三: 目录及文件类型
-file(GLOB_RECURSE SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
+file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
 # include_directories 指定头文件对应的目录
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
