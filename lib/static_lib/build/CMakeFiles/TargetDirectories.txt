@@ -1,3 +1,0 @@
-D:/soft-dev/code/c++/cpp_learn/lib/static_lib/build/CMakeFiles/learnLib.dir
-D:/soft-dev/code/c++/cpp_learn/lib/static_lib/build/CMakeFiles/edit_cache.dir
-D:/soft-dev/code/c++/cpp_learn/lib/static_lib/build/CMakeFiles/rebuild_cache.dir
