@@ -13,9 +13,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(HOME ./bin)
 set(EXECUTABLE_OUTPUT_PATH ${HOME})
 
-
-# 定义变量，指定编译的文件
-set(BUILD_LIST src/main.cpp)
+# 链接静态库
+# 参数一: 静态库路径
+# 参数二: 静态库名字，可以掐头(lib)去尾(.a)
+link_libraries(learnLib)
+# 指定动态、静态库路径，如果是系统的它可以自己识别，但是如果是三方的可能找不到
+link_directories(${PROJECT_SOURCE_DIR}/lib/static_lib/build/lib)
 
 # 搜索某个目录下的源文件并赋值第二个参数变量中
 # aux_source_directory(./src SRC)
@@ -31,6 +34,8 @@ file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # 生成可执行程序
+# 如果链接静态库，打包时候会打包到 app 可执行文件里
+# 如果链接动态库，打包时候会不会打进去，程序启动后调用时候才加载
 # 参数1：可执行文件名
 # 参数n：需要构建的文件
 add_executable(app ${SRC})

@@ -1,0 +1,2 @@
+D:/soft-dev/env/mingw64/bin/ar.exe qc lib/liblearnLib.a CMakeFiles/learnLib.dir/src/main.cpp.obj
+D:/soft-dev/env/mingw64/bin/ranlib.exe lib/liblearnLib.a

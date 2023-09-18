@@ -8,7 +8,13 @@ cmake 命令行指定变量：
 # -D 指定变量名
 cmake ./CMakeLists.txt -D变量名=值
 ```
-
+### 制作库文件
+```shell
+# windows 需要执行一次,指定 Unix 平台的 Makefiles，因为默认是 windows 平台的 msvc
+cmake .. -G "Unix Makefiles"
+make
+```
+cmake 
 
 ## 编译命令
 std: 指定 c++ 版本
