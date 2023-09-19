@@ -35,6 +35,9 @@ link_directories(${PROJECT_SOURCE_DIR}/lib/compile/build/lib)
 link_libraries(static_lib)
 
 
+# 打印日志
+message("root files:\n\t${SRC}")
+
 # 生成可执行程序
 # 如果链接静态库，打包时候会打包到 app 可执行文件里
 # 如果链接动态库，打包时候会不会打进去，程序启动后调用时候才加载
