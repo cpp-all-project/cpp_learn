@@ -12,9 +12,9 @@ file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # 生成库文件
-# linux: 静态库.so 动态库.a
+# linux: 静态.a 动态库.so
 # windows: 静态库.lib 动态库.dll
 # 动态库有可执行权限
 # SHARED 动态库制作，STATIC 静态库制作
-add_library(learnLib STATIC ${SRC})
-#add_library(learnLib SHARED ${SRC})
+add_library(static_lib STATIC ${SRC})
+add_library(dyn_lib SHARED ${SRC})
