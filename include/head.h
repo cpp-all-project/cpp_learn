@@ -1,5 +1,5 @@
-#ifndef _HEAD_H
-#define _HEAD_H
+#ifndef HEAD_H
+#define HEAD_H
 // 加法
 int add(int a, int b);
 // 减法

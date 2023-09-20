@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h>
+//#include <windows.h>
 #include "head.h"
 #include <chrono>
 #include <iomanip>
@@ -16,8 +16,8 @@ int main() {
     printf("a * b = %d\n", multiply(a, b));
     printf("a / b = %f\n", divide(a, b));
 
-    // SetConsoleOutputCP 函数所在库函数，让 cmd 程序的编码更为 utf-8
-    SetConsoleOutputCP(65001);
+    // windows SetConsoleOutputCP 函数所在库函数，让 cmd 程序的编码更为 utf-8
+    // SetConsoleOutputCP(65001);
     std::cout << "你好，世界！" << std::endl;
 
 
