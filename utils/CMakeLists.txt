@@ -5,4 +5,6 @@ project(utils)
 aux_source_directory(./ SRC)
 
 # 指定静态库
-add_library(utils STATIC ${SRC})
+add_library(utils STATIC ${SRC}
+        read_config.cpp
+        read_config.h)

@@ -10,6 +10,4 @@ include_directories(${PROJECT_SOURCE_DIR}/utils) # 头文件对应的目录
 add_subdirectory(utils) # 嵌套的子目录
 link_libraries(utils) # 链接静态库
 
-include_directories(${PROJECT_SOURCE_DIR}/lib/nlohmann) # 头文件对应的目录
-
 add_executable(app main.cpp)
