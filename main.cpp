@@ -3,7 +3,8 @@
 #include "env.h"
 #include "read_config.h"
 
-int main() {
+int main()
+{
     read_toml();
     read_json();
 
