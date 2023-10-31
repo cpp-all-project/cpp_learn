@@ -18,8 +18,8 @@ void read_toml()
   std::string_view password = config["database"]["password"].value_or("");
 
   // 打印配置项
-  std::cout << "Server: " << host << ":" << port << std::endl;
-  std::cout << "Database: " << username << "/" << password << std::endl;
+  std::cout << "服务地址: " << host << ":" << port << std::endl;
+  std::cout << "数据库账号密码: " << username << "/" << password << std::endl;
   std::cout << "" << std::endl;
 }
 
