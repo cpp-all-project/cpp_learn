@@ -1,7 +1,7 @@
 #include <iostream>
 #include "read_config.h"
-#include "../lib/toml++/toml.hpp"
-#include "../lib/nlohmann/json.hpp"
+#include "../../lib/toml++/toml.hpp"
+#include "../../lib/nlohmann/json.hpp"
 
 using json = nlohmann::json;
 
