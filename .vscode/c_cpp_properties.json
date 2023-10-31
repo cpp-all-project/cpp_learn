@@ -1,0 +1,22 @@
+// 对C/C++扩展的设置。
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      // 头文件的位置，这里的${workspaceFolder}/**，"/"前为一个vscode变量，值为工作区路径（工作区就是你当前打开的文件夹），
+      // "/"后的"**"的意思是递归向下寻找。
+      // 如果你需要安装c++第三方库，请看后面的Q&A。头文件库默认包含了c++标准库，无需指定。
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      // 编译器路径，c++扩展会从 path 环境变量中自动寻找 gcc 的路径，如果这个路径找不到，请手动设置
+      "compilerPath": "D:\\soft-dev\\env\\mingw64\\bin\\gcc.exe",
+      // 选择当前的平台和编译器，我们是在 windows 平台上使用 gcc 作为编译器，所以填windows-gcc-x64。
+      "intelliSenseMode": "windows-gcc-x64",
+      // 以下两条或许不会默认生成，但我建议你添加上
+      // 指定c和c++标准。为了不影响代码编写（指某些奇怪的红色波浪线），同时享受新标准的便利，请至少设为 c++17 或以上和 c11 以上。我们所用的 gcc 12.2.0 已经部分支持 c++23 和 c++20
+      "cppStandard": "c++23",
+      "cStandard": "c23"
+    }
+  ],
+  "version": 4
+}
