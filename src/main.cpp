@@ -5,6 +5,9 @@
 
 int main()
 {
+    // 防止终端一闪而过
+    system("pause");
+
     read_toml();
     read_json();
 
