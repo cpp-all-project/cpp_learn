@@ -2,16 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "g++.exe - Build and debug active file",
+      "name": "g++.exe - 打包和调试激活文件",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
       // 这个配置表明是否启动控制台， true 会出现额外的黑窗口， false 则会调用内置终端。由于黑窗口运行完之后会直接关闭，不利于查看运行结果，所以推荐设为 false
-      "externalConsole": false,
+      "externalConsole": true,
       "MIMode": "gdb",
       // 调试器的路径。我们用 gdb 作为调试器，所以路径为 mingw64\\bin\\gdb.exe
       "miDebuggerPath": "D:\\soft-dev\\env\\mingw64\\bin\\gdb.exe",
